@@ -1,0 +1,82 @@
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #f1f1f1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc;
+    }
+
+    .stopwatch {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      letter-spacing: 2px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      background: #1e1e1e;
+      color: #f1f1f1;
+      box-shadow: 0 0 8px rgba(0, 255, 204, 0.6);
+      transition: all 0.2s ease;
+    }
+
+    button:hover {
+      background: #00ffcc;
+      color: #121212;
+      box-shadow: 0 0 15px #00ffcc;
+    }
+
+    .laps {
+      max-width: 500px;
+      width: 100%;
+      background: #1e1e1e;
+      border-radius: 8px;
+      padding: 10px;
+      overflow-y: auto;
+      max-height: 200px;
+    }
+
+    .laps p {
+      margin: 5px 0;
+      padding: 5px;
+      background: #2a2a2a;
+      border-radius: 5px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .stopwatch {
+        font-size: 2rem;
+      }
+      .laps {
+      max-width: 290px;
+      }
+
+      button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+      }
+    }
+  
